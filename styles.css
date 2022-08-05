@@ -10,31 +10,28 @@ body {
 }
 
 .container {
-  min-height: 100vh;
+  height: 100vh;
+  border: 2px solid red;
   display: flex;
 }
 
 /*structure for left sidebar*/
-body div > :first-child {
-  border: 2px solid blue;
-  flex: 4 4 auto;
+body .container > :first-child {
+  border: 2px solid green;
+  flex: 5 8 auto;
 }
 
-
-
-
-
-
+/*styling for left-sidebar*/
 
 /*structure for main content*/
-body div > :nth-child(2) {
-  border: 2px solid green;
-  flex: 20 20 auto;
+body .container > :nth-child(2) {
+  flex: 19 19 auto;
+  border: 2px solid magenta;
 }
 
 /*structure for right sidebar*/
-body div > :last-child {
-  border: 2px solid sienna;
-  flex: 6 6 auto; 
+body .container > :last-child {
+  border: 2px solid blue;
+  flex: 7 6 auto; 
 }
 
