@@ -1,0 +1,40 @@
+:root {
+  height: 100%;
+  --sidecolor: rgb(248, 250, 252); 
+  --maincolor: rgba(50, 36, 212, 0.822);
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+}
+
+/*structure for left sidebar*/
+body div > :first-child {
+  border: 2px solid blue;
+  flex: 4 4 auto;
+}
+
+
+
+
+
+
+
+/*structure for main content*/
+body div > :nth-child(2) {
+  border: 2px solid green;
+  flex: 20 20 auto;
+}
+
+/*structure for right sidebar*/
+body div > :last-child {
+  border: 2px solid sienna;
+  flex: 6 6 auto; 
+}
+
