@@ -1,7 +1,7 @@
 :root {
   height: 100%;
-  --sidecolor: rgb(248, 250, 252); 
-  --maincolor: rgba(50, 36, 212, 0.822);
+  --sidecolor: rgb(226, 232, 240);
+  --maincolor: rgb(244, 244, 245);
 }
 
 body {
@@ -11,27 +11,28 @@ body {
 
 .container {
   height: 100vh;
-  border: 2px solid red;
   display: flex;
 }
 
 /*structure for left sidebar*/
 body .container > :first-child {
-  border: 2px solid green;
-  flex: 5 8 auto;
+  background-color: var(--sidecolor);
+  flex: 3; 
 }
 
 /*styling for left-sidebar*/
 
 /*structure for main content*/
 body .container > :nth-child(2) {
-  flex: 19 19 auto;
+  background-color: var(--maincolor);
+  flex: 11;
   border: 2px solid magenta;
 }
 
 /*structure for right sidebar*/
 body .container > :last-child {
+  background-color: var(--sidecolor);
   border: 2px solid blue;
-  flex: 7 6 auto; 
+  flex: 4; 
 }
 
