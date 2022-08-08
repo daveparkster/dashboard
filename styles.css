@@ -1,8 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
 :root {
   height: 100%;
-  --sidecolor: rgb(226, 232, 240);
-  --maincolor: rgb(244, 244, 245);
+  --sidecolor: rgb(229, 229, 229);
+  --maincolor: grey;
+  font-size: 12px;
 }
+
+ * {
+  font-family: Poppins;
+ }
 
 body {
   min-height: 100vh;
@@ -10,17 +17,118 @@ body {
 }
 
 .container {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
 }
 
 /*structure for left sidebar*/
 body .container > :first-child {
   background-color: var(--sidecolor);
-  flex: 2; 
+  flex: 2.5; 
 }
 
-/*styling for left-sidebar*/
+/*styling for left-sidebar*/ 
+
+.left {
+  display: flex;
+  flex-direction: column;
+}
+
+/*logo section*/
+.left .logo {
+  flex: 1 1 auto; 
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+}
+
+.left .logo img {
+  width: 8rem;
+}
+
+.logo h2 {
+  display: flex;
+  font-size: 2rem;
+}
+
+/*button section*/
+.left div:nth-child(2) {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.buttons.top > * {
+  display: flex;
+  align-items: center;
+  background-color: var(--sidecolor); 
+  width: 85%;
+  border-radius: 0.8rem;
+}
+
+.buttons.top h3 {
+  font-size: 1rem;
+}
+
+.buttons.top img {
+  width: 2rem;
+}
+
+/*content section*/
+.left section:nth-child(3) {
+  flex: 4 4 auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.left section div {
+  width: 85%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;
+  background-color: rgb(110, 197, 110);
+  border-radius: 0.8rem;
+}
+
+.left section div > * {
+  border: 2px solid red;
+}
+
+.left section div img {
+  width: 70%;
+  height: 60%;
+}
+
+/*button section*/
+.left div:nth-child(4) {
+  flex: 4 4 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttons.bottom > * {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 85%;
+  border-radius: 0.8rem;
+}
+
+.buttons.bottom h3 {
+  font-size: 1rem;
+}
+
+.buttons.bottom img {
+  width: 2rem;
+}
+
 
 /*structure for main content*/
 body .container > :nth-child(2) {
