@@ -135,11 +135,39 @@ body .container > :first-child {
 /*hover effects for buttons in left-sidebar*/
 
 
-
 /*structure for main content*/
 body .container > :nth-child(2) {
   background-color: var(--maincolor);
-  flex: 11;
+  flex: 11 11;
+  border: 2px solid red;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+main header p {
+  margin: 0; 
+  padding: 0;
+}
+
+main > * {
+  border: 2px solid blue;
+}
+
+header {
+  flex: 1 1 auto; 
+}
+
+.information {
+  flex: 1 1 auto;
+}
+
+.big-chart {
+  flex: 13 13 auto;
+}
+
+.system {
+  flex: 11 11 auto;
 }
 
 /*structure for right sidebar*/
