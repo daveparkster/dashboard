@@ -3,7 +3,7 @@
 :root {
   height: 100%;
   --sidecolor: rgb(240, 253, 244); /*229, 231, 235*/
-  --maincolor: rgb(245, 245, 245); /*245, 245, 245*/
+  --maincolor: white; /*245, 245, 245*/
   font-size: 12px;
 }
 
@@ -51,7 +51,7 @@ body .container > :first-child {
   font-size: 2rem;
 }
 
-/*button section*/
+/*top button section*/
 .left div:nth-child(2) {
   flex: 1 1 auto;
   display: flex;
@@ -66,6 +66,8 @@ body .container > :first-child {
   background-color: var(--sidecolor); 
   width: 85%;
   border-radius: 0.8rem;
+  gap: 0.5rem;
+  border-style: none;
 }
 
 .buttons.top h3 {
@@ -91,9 +93,9 @@ body .container > :first-child {
   flex-direction: column;
   justify-content: center; 
   align-items: center;
-  background-color: var(--sidecolor);
+  background-color: var(--maincolor);
   border-radius: 0.8rem;
-  box-shadow: 20px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
 .left section div > * {
@@ -121,6 +123,8 @@ body .container > :first-child {
   width: 85%;
   border-radius: 0.8rem;
   background-color: var(--sidecolor);
+  gap: 0.5rem;
+  border-style: none;
 }
 
 .buttons.bottom h3 {
