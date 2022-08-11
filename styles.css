@@ -203,15 +203,42 @@ main header .left-display > * {
   padding: 0;
 }
 
-
-
 .amount .left-display img{
   height: 2rem;
 }
 
-.information {
+/*information section*/
+.info {
+  flex: 1 1 auto;
+  border: 1px solid green;
+  display: flex;
+}
+
+.info > * {
+  border: 1px solid black;
   flex: 1 1 auto;
 }
+
+.left-info {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 1.25rem;
+  gap: 1rem;
+}
+
+.right-info {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.right-info > * {
+  width: 5rem;
+  height: 2rem;
+}
+
 
 .big-chart {
   flex: 13 13 auto;
