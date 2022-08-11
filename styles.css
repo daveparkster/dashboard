@@ -239,12 +239,13 @@ main header .left-display > * {
   height: 2rem;
 }
 
-
+/* need to import stuff here later*/
 .big-chart {
   flex: 13 13 auto;
 }
 
-.system {
+/*box-messages*/ 
+.box-messages {
   flex: 11 11 auto;
 }
 
