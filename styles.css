@@ -24,7 +24,7 @@ body {
 /*structure for left sidebar*/
 body .container > :first-child {
   background-color: var(--sidecolor);
-  flex: 2.5; 
+  flex: 2.5 2.5; 
 }
 
 /*styling for left-sidebar*/ 
@@ -143,6 +143,7 @@ body .container > :nth-child(2) {
   padding: 2rem;
   display: flex;
   flex-direction: column;
+  min-height: 100vh; 
 }
 
 main > * {
@@ -247,6 +248,24 @@ main header .left-display > * {
 /*box-messages*/ 
 .box-messages {
   flex: 11 11 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 1.5rem;
+}
+
+.box-messages > * {
+  border: 2px solid red;
+}
+
+.box-messages .bitcoin{
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+
+.box-messages .message-box {
+  grid-column: 3 / -1;
+  grid-row: 1 / -1;
 }
 
 /*structure for right sidebar*/
