@@ -145,17 +145,68 @@ body .container > :nth-child(2) {
   flex-direction: column;
 }
 
-main header p {
-  margin: 0; 
-  padding: 0;
-}
-
 main > * {
   border: 2px solid blue;
 }
 
-header {
+/*upmost top section of main content*/
+main header {
   flex: 1 1 auto; 
+  border: 2px solid red;
+  display: flex;
+}
+
+header > * {
+  flex: 1 1 auto;
+  border: 2px solid green;
+}
+
+header .left-display {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.left-display p {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.left-display .percentage {
+  font-size: 1.5rem;
+  margin-left: 1rem; 
+  margin-right: 0.5rem;
+}
+
+.left-display img {
+  border: 2px solid red;
+}
+
+.left-display div {
+  font-size: 1rem;
+  font-weight: bold;
+  border: 2px solid red;
+}
+
+header .right-display {
+  display: flex;
+  font-size: 2rem;
+  font-weight: bold;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+
+/*remove margin and padding*/
+main header .left-display > * {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+.amount .left-display img{
+  height: 2rem;
 }
 
 .information {
