@@ -2,7 +2,7 @@
 
 :root {
   height: 100%;
-  --sidecolor: rgb(240, 253, 244);
+  --sidecolor: rgb(240, 249, 255);
   --maincolor: white; 
   font-size: 12px;
 }
@@ -43,7 +43,7 @@ body .container > :first-child {
 }
 
 .left .logo img {
-  width: 8rem;
+  width: 7.2rem;
 }
 
 .logo h2 {
@@ -242,7 +242,7 @@ main header .left-display > * {
 main .big-chart{
   border: 2px solid green;
   position: relative;
-  height: 34vh;
+  height: 35vh;
   width: 60vw;
 }
 
