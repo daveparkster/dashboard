@@ -138,12 +138,11 @@ body .container > :first-child {
 /*structure for main content*/
 body .container > :nth-child(2) {
   background-color: var(--maincolor);
-  flex: 11 11;
+  flex: 10 10;
   border: 2px solid red;
-  padding: 2rem;
+  padding: 1rem 2rem 1rem 2rem;
   display: flex;
   flex-direction: column;
-  min-height: 100vh; 
 }
 
 main > * {
@@ -152,7 +151,7 @@ main > * {
 
 /*upmost top section of main content*/
 main header {
-  flex: 1 1 auto; 
+  flex: 0.5 0.5 auto; 
   border: 2px solid red;
   display: flex;
 }
@@ -210,7 +209,6 @@ main header .left-display > * {
 
 /*information section*/
 .info {
-  flex: 1 1 auto;
   border: 1px solid green;
   display: flex;
 }
@@ -223,7 +221,7 @@ main header .left-display > * {
 .left-info {
   display: flex;
   justify-content: flex-start;
-  align-items: center;
+  align-items: flex-start;
   font-size: 1.25rem;
   gap: 1rem;
 }
@@ -231,7 +229,7 @@ main header .left-display > * {
 .right-info {
   display: flex;
   justify-content: flex-end;
-  align-items: center;
+  align-items: flex-start;
   gap: 1.2rem;
 }
 
@@ -241,13 +239,17 @@ main header .left-display > * {
 }
 
 /* need to import stuff here later*/
-.big-chart {
-  flex: 13 13 auto;
+main .big-chart{
+  border: 2px solid green;
+  position: relative;
+  height: 34vh;
+  width: 60vw;
 }
+
 
 /*box-messages*/ 
 .box-messages {
-  flex: 11 11 auto;
+  flex: 5 5;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
@@ -271,6 +273,6 @@ main header .left-display > * {
 /*structure for right sidebar*/
 body .container > :last-child {
   background-color: var(--sidecolor);
-  flex: 3; 
+  flex: 3.5 3.5 auto; 
 }
 
