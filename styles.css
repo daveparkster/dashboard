@@ -49,8 +49,10 @@ body .container > :first-child {
 .logo h2 {
   display: flex;
   font-size: 2.3rem;
-  border: 2px solid red;
-  font-weight: bold;
+}
+
+.logo h2 span {
+  color: #4dc3ee;
 }
 
 /*top button section*/
