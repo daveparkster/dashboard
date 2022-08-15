@@ -109,7 +109,7 @@ body .container > :first-child {
   align-items: center;
   background-color: var(--maincolor);
   border-radius: 0.8rem;
-  box-shadow: rgba(225, 235, 238, 0.32) 0px 2px 4px 0px, rgba(138, 218, 243, 0.32) 0px 2px 16px 0px;
+  box-shadow: rgba(46, 45, 45, 0.35) 0px 5px 15px;
 }
 
 .left section div img {
