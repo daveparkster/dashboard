@@ -12,7 +12,7 @@
 }
 
 .hvr-sweep-to-right:before {
-  border-radius: 1.5rem;
+  border-radius: 2rem;
   content: "";
   position: absolute;
   z-index: -1;
