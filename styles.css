@@ -102,14 +102,14 @@ body .container > :first-child {
 
 .left section div {
   width: 77%;
-  height: 98%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center; 
   align-items: center;
   background-color: var(--maincolor);
   border-radius: 0.8rem;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  box-shadow: rgba(225, 235, 238, 0.32) 0px 2px 4px 0px, rgba(138, 218, 243, 0.32) 0px 2px 16px 0px;
 }
 
 .left section div img {
