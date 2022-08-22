@@ -272,21 +272,75 @@ main .big-chart{
   width: 60vw;
 }
 
-
 /*box-messages*/ 
 .box-messages {
   flex: 5 5;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  grid-gap: 1.5rem;
+  grid-gap: 1rem;
+  margin-top: 2.5rem;
 }
 
 .box-messages > * {
   border: 2px solid red;
+  border-radius: 0.5rem; 
+  display: flex;
+  flex-direction: column;
 }
 
-.box-messages .bitcoin{
+/*remove default margin and padding from h2/h5*/
+.label h2,
+.label h5 {
+  margin: 0;
+  padding: 0;
+}
+
+.binance > *,
+.bitcoin > *, 
+.ethereum > *,
+.pipercoin > * {
+  display: flex;
+  margin-left: 1rem;
+}
+
+.top-2 {
+  border: 2px solid blue;
+  flex: 3 3 auto;
+  display: flex; 
+}
+
+.top-2 .rep {
+  border: 2px solid black;
+  flex: 1 1 auto;
+}
+
+.top-2 .label {
+  border: 2px solid red;
+  flex: 3 3 auto;
+}
+
+.mid-2 {
+  border: 2px solid green;
+  flex: 1 1 auto;
+}
+
+.bot-2 {
+  border: 2px solid pink;
+  flex: 1 1 auto;
+}
+
+/*remove h1*/
+.bot-2 h1 {
+  margin: 0;
+}
+
+.mid-2 svg {
+  width: 5px;
+  border: 2px solid red;
+}
+
+.box-messages .pipercoin{
   grid-column: 2 / 3;
   grid-row: 1 / 2;
 }
