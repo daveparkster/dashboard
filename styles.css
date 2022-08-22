@@ -301,12 +301,14 @@ main .big-chart{
 .ethereum > *,
 .pipercoin > * {
   display: flex;
-  margin-left: 1rem;
+  margin-left: 1.5rem;
 }
 
 .top-2 {
   flex: 1 1 auto;
   display: flex; 
+  gap: 0.8rem;
+  margin-top: 1rem;
 }
 
 .top-2 .rep {
@@ -316,51 +318,83 @@ main .big-chart{
   justify-content: center;
   align-items: center;
   border-radius: 1.2rem;
-  margin-top: 1rem;
 }
 
+.top-2 .rep svg {
+  height: 2.5rem;
+  width: 2.5rem;
+  padding: 0;
+  margin: 0;
+}
+
+
 .top-2 .label {
-  flex: 4 4 auto;
+  flex: 5 5;
   display: flex;
   flex-direction: column;
-  margin-top: 1rem;
-  margin-left: 0.8rem;
   justify-content: center;
 }
 
 .top-2 .label h2 {
   font-weight: bolder;
-  font-size: 1.6rem;
+  font-size: 1.3rem;
 }
 
 .top-2 .label h5 {
   font-weight: bold;
   color: grey;
+  margin-left: 0.1rem;
 }
 
 .mid-2 {
+  flex: 4.5 4.5 auto;
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 1rem;
+}
+
+.mid-2 p {
+  padding: 0.2rem 1rem 0.2rem 1rem;
   border: 2px solid green;
-  flex: 4 4 auto;
+  border-radius: 1rem;
+  text-align: center;
+  margin: 0;
+} 
+
+.mid-2 svg {
+  height: 2rem;
 }
 
 .bot-2 {
-  border: 2px solid pink;
-  flex: 1 1 auto;
+  flex: 0.5 0.5 auto;
+  margin: 0 0 0 1.5rem;
 }
 
-/*remove h1*/
-.bot-2 h1 {
+.bot-2 p {
+  font-size: 1.5rem;
+  font-weight: bolder;
   margin: 0;
+  margin-left: 0.1rem;
 }
 
-.mid-2 svg {
-  width: 5px;
-  border: 2px solid red;
+.box-messages .binance {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+.box-messages .bitcoin {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
 }
 
 .box-messages .pipercoin{
   grid-column: 2 / 3;
   grid-row: 1 / 2;
+}
+
+.box-messages .ethereum {
+  grid-column: 2 / 3;
+  grid-row: 2 / -1;
 }
 
 .box-messages .message-box {
