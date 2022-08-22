@@ -305,24 +305,42 @@ main .big-chart{
 }
 
 .top-2 {
-  border: 2px solid blue;
-  flex: 3 3 auto;
+  flex: 1 1 auto;
   display: flex; 
 }
 
 .top-2 .rep {
   border: 2px solid black;
-  flex: 1 1 auto;
+  flex: 0.5 0.5 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1.2rem;
+  margin-top: 1rem;
 }
 
 .top-2 .label {
-  border: 2px solid red;
-  flex: 3 3 auto;
+  flex: 4 4 auto;
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  margin-left: 0.8rem;
+  justify-content: center;
+}
+
+.top-2 .label h2 {
+  font-weight: bolder;
+  font-size: 1.6rem;
+}
+
+.top-2 .label h5 {
+  font-weight: bold;
+  color: grey;
 }
 
 .mid-2 {
   border: 2px solid green;
-  flex: 1 1 auto;
+  flex: 4 4 auto;
 }
 
 .bot-2 {
