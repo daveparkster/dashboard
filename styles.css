@@ -370,15 +370,22 @@ main .big-chart{
 }
 
 .mid-2 p {
-  padding: 0.2rem 1rem 0.2rem 1rem;
-  border: 2px solid green;
+  padding: 0.3rem 1.2rem 0.3rem 1.2rem;
+  background-color:#cbf7c7;
   border-radius: 1rem;
   text-align: center;
+  color: green;
+  font-weight: bolder;
   margin: 0;
 } 
 
+.pipercoin .mid-2 p {
+  background-color:#ffdbe0; 
+  color: rgb(247, 129, 149);
+}
+
 .mid-2 svg {
-  height: 2rem;
+  height: 1.8rem;
 }
 
 .bot-2 {
