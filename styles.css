@@ -363,7 +363,7 @@ main .big-chart{
 }
 
 .mid-2 {
-  flex: 3 3 auto;
+  flex: 4 4;
   display: flex;
   align-items: flex-end;
   padding-bottom: 1rem;
