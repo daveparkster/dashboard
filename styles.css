@@ -439,10 +439,29 @@ main .big-chart{
 
 .message-box {
   background-color: rgb(252, 239, 222);
+  display: flex;
+}
+
+.message-box p {
+  flex: 1 1 auto;
+}
+
+.message-box .person {
+  border: 2px solid red;
+  flex: 15 15 auto;
+}
+
+form {
+  border: 2px solid black !important;
+  display: flex;
+  margin-bottom: 1rem;
 }
 
 .message-box > * {
+  flex: 1 1 auto;
   border: 2px solid blue;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
 }
 
 /*structure for right sidebar*/
