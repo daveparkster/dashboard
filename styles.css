@@ -435,6 +435,16 @@ main .big-chart{
   grid-row: 1 / -1;
 }
 
+/*styling for chat box*/
+
+.message-box {
+  background-color: rgb(252, 239, 222);
+}
+
+.message-box > * {
+  border: 2px solid blue;
+}
+
 /*structure for right sidebar*/
 body .container > :last-child {
   background-color: var(--sidecolor);
