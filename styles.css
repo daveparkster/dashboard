@@ -304,6 +304,21 @@ main .big-chart{
   margin-left: 1.5rem;
 }
 
+.binance,
+.bitcoin,
+.ethereum {
+  background-color: #eefdec;
+}
+
+.pipercoin {
+  background-color: #fff3f4;
+}
+
+/*add background color to logo for pipercoin*/
+.pipercoin .top-2 .rep {
+  background-color: #ffdbe0;
+}
+
 .top-2 {
   flex: 1 1 auto;
   display: flex; 
@@ -312,12 +327,13 @@ main .big-chart{
 }
 
 .top-2 .rep {
-  border: 2px solid black;
   flex: 0.5 0.5 auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 1.2rem;
+  border-radius: 1rem;
+  background-color: #cbf7c7;
+  border-style: none;
 }
 
 .top-2 .rep svg {
