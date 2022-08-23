@@ -367,6 +367,7 @@ main .big-chart{
   display: flex;
   align-items: flex-end;
   padding-bottom: 1rem;
+  gap: 0.4rem;
 }
 
 .mid-2 p {
@@ -374,7 +375,7 @@ main .big-chart{
   background-color:#cbf7c7;
   border-radius: 1rem;
   text-align: center;
-  color: green;
+  color: rgb(37, 202, 37);
   font-weight: bolder;
   margin: 0;
 } 
@@ -384,8 +385,17 @@ main .big-chart{
   color: rgb(247, 129, 149);
 }
 
+.pipercoin .mid-2 svg {
+  background-color: rgb(247, 129, 149);
+}
+
 .mid-2 svg {
-  height: 1.8rem;
+  height: 1.4rem;
+  border-radius: 3rem;
+  padding: 0;
+  margin-bottom: 0.28rem;
+  color: white;
+  background-color: rgb(37, 202, 37);
 }
 
 .bot-2 {
