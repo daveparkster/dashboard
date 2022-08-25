@@ -29,7 +29,7 @@ const data = {
       fill: true,
       backgroundColor: gradient,
       borderColor: "#fff",
-      pointBackgroundColor: "rgb(189, 195, 199)",
+      pointBackgroundColor: "#D3D3D3",
     },
   ],
 }; 
@@ -38,9 +38,9 @@ const config = {
   type: 'line',
   data: data,
   options: {
-    raidus: 5, 
-    hitRadius: 20, 
-    hoverRadius: 5, 
+    raidus: 2, 
+    hitRadius: 10, 
+    hoverRadius: 2, 
     responsive: true, 
     maintainAspectRatio: false, 
     animation: {
