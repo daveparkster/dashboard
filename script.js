@@ -38,6 +38,11 @@ const config = {
   type: 'line',
   data: data,
   options: {
+    plugins: {
+      legend: {
+        display: false
+      }
+    },
     raidus: 2, 
     hitRadius: 10, 
     hoverRadius: 2, 
