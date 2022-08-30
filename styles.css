@@ -587,6 +587,32 @@ form button svg {
   color: white;
 }
 
+/*styling for charts in main page*/
+
+.green-container,
+.pink-container {
+  position: relative;
+  width: 14rem;
+  height: 7rem;
+}
+
+.binance .green-container {
+  margin-left: 0.7rem;
+}
+
+.bitcoin .green-container {
+  margin-left: 2.1rem;
+}
+
+.ethereum .green-container {
+  margin-left: 2.2rem;
+}
+
+.pink-container {
+  margin-left: 0.9rem;
+}
+
+
 /*structure for right sidebar*/
 body .container > :last-child {
   background-color: var(--sidecolor);
