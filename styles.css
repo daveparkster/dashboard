@@ -542,8 +542,9 @@ form {
 }
 
 input {
-  border-radius: 1rem;
-  border: 2px solid black;
+  border-radius: 0.5rem;
+  border: 0.2rem solid rgb(255,165,0);
+  outline: none;
 }
 
 .message-box > * {
