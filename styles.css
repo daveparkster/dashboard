@@ -613,9 +613,9 @@ form button svg {
   margin-left: 0.9rem;
 }
 
-
 /*structure for right sidebar*/
 body .container > :last-child {
   background-color: var(--sidecolor);
   flex: 3.5 3.5 auto; 
+  box-shadow: rgba(99, 99, 99, 0.2) 0rem 0rem 0.8rem 0rem;
 }
