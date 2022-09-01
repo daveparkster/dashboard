@@ -344,7 +344,94 @@
         </div>
       </div>
     </main>
-    <aside>info</aside>
+    <aside class="right">
+      <header>
+        <div class="search">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+          </svg>          
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0" />
+          </svg>          
+        </div>
+        <div class="userName">
+          <p>Richard Hendricks</p>
+          <p>@rhendricks</p>
+        </div>
+        <img src="./user-profile/profilePic.jpg" alt="Richard Hendricks">
+      </header>
+      <div class="displayBalance">
+        <div class="totalBalance">Total Balance</div>
+        <div class="balanceCost">$267,820.00</div>
+        <div class="balancePercentage">
+          <div class="">+8.29%</div>
+          <!--svg-->
+        </div>
+      </div>
+      <div class="balanceItems">
+        <div class="leftBalanceItem">
+          <!--svg-->
+          <div class="investment">
+            <p>Investment</p>
+            <p>87.2K</p>
+            <!--arrow-->
+          </div>
+        </div>
+        <div class="rightBalanceItem">
+          <!--svg-->
+          <div class="cashback">
+            <p>Cash Back</p>
+            <p>19.5K</p>
+            <!--arrow-->
+          </div>
+        </div>
+      </div>
+      <div class="conversion">
+        <p>Convert</p>
+        <form>
+          <div class="top convert">
+            <input type="text" name="firstconvert" id="firstConvert">
+            <select name="currency" id="currency">
+              <option value="usd">USD</option>
+              <option value="gbp">GBP</option>
+              <option value="cny">CNY</option>
+              <option value="eur">EUR</option>
+            </select>
+          </div>
+          <div class="bottom convert">
+            <input type="text" name="lastconvert" id="lastConvert">
+            <select name="cryptocurrency" id="cryptocurrency">
+              <option value="bnb">BNB</option>
+              <option value="btc">BTC</option>
+              <option value="ppi">PPI</option> 
+              <option value="eth">ETH</option>
+            </select>
+          </div>
+        </form>
+        <button id="convertNow">Submit</button>
+      </div>
+      <div class="updateSection">
+        <div class="updateForm">
+          <div class="cta">
+            <p>Upgrade your plan</p>
+            <div class="updatePointers">
+              <div class="updateVersion">
+                <!--circle-->
+                <p>Version 10.2</p>
+              </div>
+              <div class="newFeatures">
+                <!--circle-->
+                <p>New Features</p>
+              </div>
+              <button id="explore">Explore</button> 
+            </div>
+          </div>
+          <div class="cta-pic">
+            <!--svg-->
+          </div>
+        </div>
+      </div>
+    </aside>
   </div>
 </body>
 </html>
