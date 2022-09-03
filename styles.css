@@ -625,8 +625,8 @@ body .container > :last-child {
 }
 
 aside.right > * { /*children of the right side of page*/
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
 
 /*Adjust size for icons in top section of sidebar*/
@@ -685,11 +685,51 @@ aside.right > * { /*children of the right side of page*/
 /*2nd top of right page*/
 .displayBalance {
   flex: 2 2 auto;
-  border: 2px solid red !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.displayBalance div {
-  font-size: 2rem;
+.displayBalance .totalBalance {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.displayBalance .balanceCost {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.balancePercentage {
+  display: flex;
+  gap: 0.4rem;
+}
+
+.bpercentage {
+  display: flex;
+  align-items: center;
+  padding: 0.2rem 0.8rem 0.2rem 0.8rem;
+  border-radius: 10rem;
+  background-color: rgb(185, 250, 179);
+  color: rgb(21, 151, 21);
+  font-weight: bolder;
+}
+
+.increaseBalance {
+  border-radius: 8rem;
+  align-self: center;
+  background-color: rgb(74, 189, 74);
+  color: white;
+  height: auto;
+  padding-top: 0.1rem;
+  padding-bottom: 0.1rem;
+}
+
+.increaseBalance svg {
+  height: 1.3rem;
+  display: flex;
+  font-weight: bolder;
+  stroke-width: 2.3px;
 }
 
 /*3rd section of right page*/
@@ -713,7 +753,6 @@ aside.right > * { /*children of the right side of page*/
 .convert {
   margin: 0rem
 }
-
 
 /*last section of right page*/
 .updateSection {
