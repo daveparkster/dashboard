@@ -618,10 +618,9 @@ body .container > :last-child {
   background-color: var(--sidecolor);
   flex: 3.3 3.3; 
   box-shadow: rgba(99, 99, 99, 0.2) 0rem 0rem 0.8rem 0rem;
-  border: 2px solid red;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 0rem;
 }
 
 aside.right > * { /*children of the right side of page*/
@@ -729,14 +728,111 @@ aside.right > * { /*children of the right side of page*/
   height: 1.3rem;
   display: flex;
   font-weight: bolder;
-  stroke-width: 2.3px;
+  stroke-width: 2.3;
 }
 
 /*3rd section of right page*/
 .balanceItems {
-  flex: 2 2 auto;
-  border: 2px solid blue !important;
+  flex: 3 3;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
+
+.subheading {
+  flex: 4 4;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.allBalanceItems {
+  flex: 6 6 auto;
+  display: flex;
+}
+
+.allBalanceItems > * {
+  flex: 1 1 auto;
+  display: flex;
+  gap: 0.8rem;
+}
+
+.leftBalanceItem > *, 
+.rightBalanceItem > * { 
+  flex: 1 1 auto;
+}
+
+.smallbox {
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+}
+
+.smallbox svg {
+  display: flex;
+  justify-content: center;
+  border-radius: 0.8rem;
+  padding-top: 0.8rem;
+  padding-left: 0.8rem;
+}
+
+.smallbox.down {
+  background-color: rgb(255, 138, 157);
+}
+
+.smallbox.down svg {
+  color: white;
+}
+
+.smallbox.up {
+  background-color: rgb(74, 189, 74);
+  color: white;
+}
+
+.investment p,
+.cashback p {
+  margin: 0;
+  padding: 0;
+}
+
+.title {
+  font-weight: bold;
+}
+
+.amount {
+  font-size: 2.3rem;
+  font-weight: bolder;
+}
+
+.balanceItems svg {
+  height: 2rem;
+}
+
+.increase, 
+.decrease {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  border-radius: 1rem;
+  padding: 0.1rem 1.2rem 0.1rem 1.2rem;
+  margin-top: 0.3rem;
+  color: white;
+  font-weight: bold;
+  margin-top: 0.4rem;
+}
+
+.decrease {
+  background-color: rgb(255, 138, 157);
+}
+
+.increase {
+  background-color: rgb(74, 189, 74);
+}
+
+
+
+
 
 /*4th section of right page*/
 .conversion {
