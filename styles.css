@@ -753,7 +753,7 @@ aside.right > * { /*children of the right side of page*/
 .allBalanceItems > * {
   flex: 1 1 auto;
   display: flex;
-  gap: 0.8rem;
+  gap: 1rem;
 }
 
 .leftBalanceItem > *, 
@@ -762,7 +762,8 @@ aside.right > * { /*children of the right side of page*/
 }
 
 .smallbox {
-  height: 60%;
+  height: 38%;
+  width: 8%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -830,28 +831,77 @@ aside.right > * { /*children of the right side of page*/
   background-color: rgb(74, 189, 74);
 }
 
-
-
-
-
 /*4th section of right page*/
 .conversion {
-  flex: 3 3 auto;
-  border: 2px solid rgb(182, 185, 32) !important;
-}
-
-/*placeholder for now*/
-.conversion form {
-  display: flex; 
+  margin: 0;
+  flex: 5 5;
+  display: flex;
   flex-direction: column;
 }
 
+.conversion > * {
+  margin: 0 !important;
+}
+
+.conversion p {
+  flex: 5 5 auto;
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: flex;
+  align-items: flex-end;
+}
+
+.conversion form {
+  flex: 15 15;
+  display: flex; 
+  flex-direction: column;
+  justify-content: space-around;
+}
+
 .convert {
-  margin: 0rem
+  display: flex;
+  height: 26%;
+  border: 2px solid rgb(211, 232, 240);
+  border-radius: 0.5rem;
+}
+
+.convert > * {
+  border-style: none;
+}
+
+.convert input {
+  width: 75%;
+}
+
+.convert select {
+  width: 25%;
+  text-align: center;
+  border-radius: 0.6rem;
+  font-size: 1.3rem;
+  font-weight: bold;
+  background-color: #f7e0c2;
+  color: white;
+  outline: none;
+}
+
+.bottom.convert select {
+  background-color: rgb(137, 202, 245);
+}
+
+.conversion button {
+  flex: 3 3 auto;
+  border-radius: 0.6rem;
+  border-style: none;
+  width: 24%;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: rgb(65, 162, 241);
+  color: white;
 }
 
 /*last section of right page*/
 .updateSection {
+  margin-top: 2rem;
   flex: 5 5 auto;
   border: 2px solid yellow !important;
 }
