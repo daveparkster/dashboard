@@ -855,7 +855,7 @@ aside.right > * { /*children of the right side of page*/
 }
 
 .conversion form {
-  flex: 15 15;
+  flex: 12 12;
   display: flex; 
   flex-direction: column;
   justify-content: center;
@@ -912,8 +912,8 @@ aside.right > * { /*children of the right side of page*/
 /*last section of right page*/
 .updateSection {
   margin-top: 0.8rem;
-  margin-bottom: 2rem;
-  flex: 4.7 4.7;
+  margin-bottom: 3rem;
+  flex: 5 ;
   display: flex;
   background-color: rgb(137, 227, 250);
   border-radius: 1.5rem;
