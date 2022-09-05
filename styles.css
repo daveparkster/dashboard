@@ -637,7 +637,7 @@ aside.right > * { /*children of the right side of page*/
 .right header {
   flex: 1 1;
   display: flex;
-  margin-top: 2rem;
+  margin-top: 3rem;
 }
 
 .search {
@@ -683,12 +683,12 @@ aside.right > * { /*children of the right side of page*/
 
 /*2nd top of right page*/
 .displayBalance {
-  flex: 2 2;
+  flex: 2.5 2.5;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  gap: 0.04rem;
-  padding-top: 1rem;
+  gap: 0.4rem;
+  padding-top: 2rem;
 }
 
 .displayBalance .totalBalance {
