@@ -683,10 +683,12 @@ aside.right > * { /*children of the right side of page*/
 
 /*2nd top of right page*/
 .displayBalance {
-  flex: 2 2 auto;
+  flex: 2 2;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
+  gap: 0.04rem;
+  padding-top: 1rem;
 }
 
 .displayBalance .totalBalance {
@@ -736,7 +738,8 @@ aside.right > * { /*children of the right side of page*/
   flex: 3 3;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 0.8rem;
+  padding-top: 3rem;
 }
 
 .subheading {
@@ -844,7 +847,7 @@ aside.right > * { /*children of the right side of page*/
 }
 
 .conversion p {
-  flex: 5 5 auto;
+  flex: 5 5;
   font-size: 1.5rem;
   font-weight: bold;
   display: flex;
@@ -855,14 +858,15 @@ aside.right > * { /*children of the right side of page*/
   flex: 15 15;
   display: flex; 
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 1.2rem;
 }
 
 .convert {
   display: flex;
   height: 26%;
-  border: 2px solid rgb(211, 232, 240);
-  border-radius: 0.5rem;
+  border: 2px solid rgb(191, 204, 207);
+  border-radius: 0.8rem;
 }
 
 .convert > * {
@@ -879,30 +883,158 @@ aside.right > * { /*children of the right side of page*/
   border-radius: 0.6rem;
   font-size: 1.3rem;
   font-weight: bold;
-  background-color: #f7e0c2;
+  background-color: #f7b867;
   color: white;
   outline: none;
 }
 
 .bottom.convert select {
-  background-color: rgb(137, 202, 245);
+  background-color: rgb(82, 183, 250);
+}
+
+.convertButton {
+  flex: 9 9;
+  display: flex;
+  align-items: flex-start;
 }
 
 .conversion button {
-  flex: 3 3 auto;
-  border-radius: 0.6rem;
+  border-radius: 1rem;
   border-style: none;
-  width: 24%;
-  font-size: 1rem;
+  width: 30%;
+  height: 40%;
+  font-size: 1.2rem;
   font-weight: bold;
-  background-color: rgb(65, 162, 241);
+  background-color: rgb(106, 100, 230);
   color: white;
 }
 
 /*last section of right page*/
 .updateSection {
-  margin-top: 2rem;
-  flex: 5 5 auto;
-  border: 2px solid yellow !important;
+  margin-top: 0.8rem;
+  margin-bottom: 2rem;
+  flex: 4.7 4.7;
+  display: flex;
+  background-color: rgb(137, 227, 250);
+  border-radius: 1.5rem;
+
 }
 
+.updateSection > * {
+  margin-top: 2.5rem;
+  margin-bottom: 1.8rem;
+}
+
+/*left side; also child of updateSection*/
+.cta {
+  flex: 2 2;
+  margin-left: 3.2rem;
+  display: flex;
+  flex-direction: column;
+  margin-top: 3rem;
+}
+
+.cta .ctaTitle {
+  flex: 0.5 0.5;
+  font-size: 1.8rem;
+  font-weight: bolder;
+  text-align: start;
+  color: black;
+}
+
+.updatePointers {
+  flex: 4 4;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start; 
+  padding-top: 1rem; /*add padding within the box*/
+  gap: 0.3rem;
+}
+
+.updatePointers > * {
+  display: flex;
+  gap: 0.4rem;
+}
+
+.circle {
+  background-color: black;
+  border-radius: 50%;
+  border-style: none;
+  width: 0.5rem;
+  height: 0.5rem;
+}
+
+/*child of updatePointers: top*/
+.updateVersion {
+  display: flex;
+  align-items: center;
+}
+
+.updateVersion span {
+  font-weight: bold;
+  color: rgb(102, 95, 95);
+  font-size: 1.05rem;
+  padding-left: 0.03rem;
+}
+
+.updateVersion .circle {
+  background-color: green;
+}
+
+/*child of updatePointers: bottom*/
+.newFeatures {
+  display: flex;
+  align-items: center;
+}
+
+.newFeatures span {
+  font-weight: bold;
+  font-size: 1.05rem;
+  color: rgb(102, 95, 95);
+}
+
+.newFeatures .circle {
+  background-color: rgb(255, 202, 211);
+}
+
+.newPerformance {
+  display: flex;
+  align-items: center;
+}
+
+.newPerformance span {
+  font-weight: bold;
+  font-size: 1.05rem;
+  color: rgb(102, 95, 95);
+}
+
+.newPerformance .circle {
+  background-color: rgb(159, 159, 252);
+}
+
+#explore {
+  border-radius: 1.3rem;
+  border-style: none;
+  width: 90%;
+  height: 13%;
+  background-color: rgb(106, 100, 230);
+  color: white; 
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 2.1rem;
+}
+
+/*right side; also child of updateSection*/
+.cta-pic {
+  margin-right: 0.5rem;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.cta-pic svg{
+  width: 14rem;
+  height: auto;
+  margin-bottom: 3rem;
+}
