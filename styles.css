@@ -1023,7 +1023,7 @@ aside.right > * { /*children of the right side of page*/
   font-weight: bold;
   font-size: 1.2rem;
   text-align: center;
-  margin-bottom: 2.1rem;
+  margin-bottom: 1.2rem;
 }
 
 /*right side; also child of updateSection*/
